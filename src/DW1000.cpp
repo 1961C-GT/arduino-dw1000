@@ -304,6 +304,7 @@ void DW1000Class::spiWakeup(){
         digitalWrite(_ss, LOW);
         delay(2);
         digitalWrite(_ss, HIGH);
+		delay(1);
         if (_debounceClockEnabled){
                 DW1000Class::enableDebounceClock();
         }
